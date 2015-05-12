@@ -22,9 +22,9 @@
 </body>
 </html>
 ```
-###### 合理引入js的方法
+#### 合理引入js的方法
 (1). 在head内使用动态创建script标签的方式引入js,实现异步加载
-```
+```javascript
 <script type="text/javascript">
     var s=document.createElement('script'),
         h=document.getElementsByTagName("head")[0];
@@ -35,7 +35,7 @@
 </script>
 ```
 (2). 在底部</body>前使用同步加载的方式；
-```
+```html
 <script type="text/javascript" src="http://****.js?v=20150501"></script>
 ```
 ##二.CSS相关
@@ -43,13 +43,13 @@
 2. 在文档头部，使用link标签引入css文件,避免使用@import ,与link 标签相比，@import指令要慢很多，（通过sass 预处理器将多个css文件编译为一个文件）；
 3. 以组件为单位组织代码块；使用规范的注释；
 * 文件顶部注释；
-```
+```css
 * @description: xxxxx中文说明
 * @author: zhangpan
 * @update: 2015-05-01 10:00
 ```
 *  模块注释
-```
+```css
 /*module1:module descript*/
 /*module2:module descript*/
 ```
@@ -63,7 +63,7 @@
 (7). 将z-index进行分层，对文档流绝对丁文的元素的视觉层级进行管理（避免z-index值得滥用）；
 (8). 使用图片精灵，合并需要的图标；
 (9). Hack,尽量避免使用hack，下面是常见的hack;
-```
+```css
 padding:10px;
 padding:9px\9; /*IE*/
 padding:8px\0; /*IE8-IE9*/
