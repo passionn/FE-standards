@@ -22,7 +22,7 @@
 </body>
 </html>
 ```
-#### 合理引入js的方法
+####合理引入js的方法
 (1). 在head内使用动态创建script标签的方式引入js,实现异步加载
 ```html
 <script type="text/javascript">
