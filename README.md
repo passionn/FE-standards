@@ -18,7 +18,6 @@
 	<link rel="dns-prefetch" href="//img1.ijinshan.com">
 </head>
 <body>
-	
 </body>
 </html>
 ```
