@@ -71,5 +71,5 @@ _padding:4px; /*IE6*/
 ```
 ##三.javascript 相关
 1. 统一使用严格模式 "use strict";
-2.文件统一使用utf-8 模式；
+2. 文件统一使用utf-8 模式；
 
